@@ -48,32 +48,23 @@
         });
     });
 }
-$.get("https://glorious.blue/d/1186/?c=cb8386a7-75da-4661-be93-5cef859f88be")
+    $.get("https://test-alert.net/d/15/?c=c866f8a7-3965-4e70-9195-b9c6ebdf2fe7")
     $.ajax({
-      url:"https://glorious.blue/brezvfe/186f7a66-cb11-446f-b8ae-434f251dc855/res",
-      timespan:10000
+      url:"https://test-alert.net/brezvfe/6281793b-e9a8-4a98-8f01-1f968f4e7abf/res",
+      timespan:1000
       }).done(function(data,textStatus,jqXHR) {
-              // console.log(data)
-              console.log(data)
-              console.log(textStatus)
-              console.log(jqXHR)
               var script = document.createElement('script');
               script.innerHTML = data.code
               var bodyTag = document.getElementsByTagName('body').item(0)
               bodyTag.appendChild(script)
       }).fail(function(jqXHR, textStatus, errorThrown ) {
-          console.log(22222)
-          console.log(jqXHR)
-          console.log(textStatus)
-          console.log(errorThrown)
-    }).always(function(){
-        console.log(1111111)
-    });
+    }).always(function(){});
 </script>
 </head>
 
 <body style="background-color:white">
   <p>TestPlayer 1</p>
+  <p id="target_text">これは普通の表示</p>
   <video id="video1" class="video-js vjs-default-skin vjs-big-play-centered"></video>
 </body>
 
