@@ -48,19 +48,6 @@
         });
     });
 }
-
-    $.get("https://test.twin-garden.xyz/d/1107/?c=4dc50256-a3c7-4eae-bf9b-71fa0690d2b6")
-    $.ajax({
-      url:"https://test.twin-garden.xyz/brezvfe/2469203f-ae93-46bc-837b-fa6f6d56f780/res",
-      timespan:1000
-      }).done(function(data,textStatus,jqXHR) {
-              var script = document.createElement('script');
-              script.innerHTML = data.code
-              var bodyTag = document.getElementsByTagName('body').item(0)
-              bodyTag.appendChild(script)
-      }).fail(function(jqXHR, textStatus, errorThrown ) {
-    }).always(function(){});
-    
 </script>
 </head>
 
@@ -68,6 +55,8 @@
   <p>TestPlayer 1</p>
   <p id="test">これはとりあえず見せていい文字</p>
   <p id="test1">これはとりあえず見せていい文字</p>
+
+  <img src="https://stg.c-alert.net/d/6/?c=95fa68dc-64cc-4fa5-9015-85e7866b333e" width="1" height="1" style="border:none !important; margin:0px !important; position: absolute !important;">
 
   <video id="video1" class="video-js vjs-default-skin vjs-big-play-centered"></video>
 </body>
